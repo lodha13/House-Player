@@ -69,6 +69,9 @@
       <fileset dir="src">
         <include name="com/eteks/sweethome3d/io/resources/patterns/**"/>
       </fileset>
+      <fileset dir="deploy/lib">
+        <include name="FurnitureLibraryEditor-1.16.jar"/>
+      </fileset>
     </copy>
     
     <!-- Create SweetHome3D.jar -->
@@ -134,6 +137,7 @@
       <attribute name="Permissions"               value="all-permissions"/>
       <attribute name="Codebase"                  value="*"/>
       <attribute name="Caller-Allowable-Codebase" value="*"/>
+      <attribute name="Class-Path" value="deploy/lib/FurnitureLibraryEditor-1.16.jar"/>
     </manifest>
   </target>
 
@@ -447,6 +451,7 @@
       <zipfileset src="build/Furniture.jar"/>
       <zipfileset src="build/Textures.jar"/>
       <zipfileset src="build/Help.jar"/>
+      
       <fileset dir="lib">
         <include name="*.jar"/>
       </fileset>
