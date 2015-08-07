@@ -48,6 +48,7 @@ public class SweetHome3DBootstrap {
         "sunflow-0.07.3i.jar",
         "jmf.jar",
         "batik-svgpathparser-1.7.jar",
+        "FurnitureLibraryEditor-1.16.jar",
         "jnlp.jar"}));
     
     String operatingSystemName = System.getProperty("os.name");
